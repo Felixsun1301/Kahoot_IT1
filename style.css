@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #46178f;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+}
+
+#app {
+  width: 100%;
+  max-width: 580px;
+}
+
+.screen {
+  display: none;
+}
+.screen.active {
+  display: block;
+}
+
+.start-box {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.start-box h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #46178f;
+}
+
+.start-box p {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  background: #46178f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 13px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background: #5a22b0;
+}
+
+#topp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding: 0 4px;
+}
+
+#timer {
+  background: white;
+  color: #46178f;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#flag-img {
+  width: 200px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  margin: 1rem auto;
+  display: block;
+}
+
+#answers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 1rem 0;
+}
+
+#answers button:nth-child(1) { background: #e21b3c; }
+#answers button:nth-child(2) { background: #1368ce; }
+#answers button:nth-child(3) { background: #d89e00; }
+#answers button:nth-child(4) { background: #26890c; }
+
+#answers button:hover {
+  opacity: 0.85;
+}
+
+#feedback {
+  font-size: 16px;
+  font-weight: bold;
+  min-height: 24px;
+  color: #333;
+  margin-top: 0.5rem;
+}
+
+#result-screen {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+}
+
+#result-screen h2 {
+  font-size: 26px;
+  color: #46178f;
+  margin-bottom: 1rem;
+}
+
+#final-score {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+}

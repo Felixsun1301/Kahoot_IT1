@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flagg-quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+
+  <div id="start-screen" class="screen active">
+    <div class="start-box">
+      <h1>Flagg-quiz</h1>
+      <p>10 spørsmål - enkle til vanskelige - 20 sek per spørsmål</p>
+      <button onclick="startQuiz()">Start!</button>
+    </div>
+  </div>
+
+  <div id="question-screen" class="screen">
+    <div id="topp">
+      <p id="q-teller">1 / 10</p>
+      <p>Tid: <span id="timer">20</span></p>
+    </div>
+    <img id="flag-img" src="" alt="Flagg" />
+    <p>Hvilket land tilhører dette flagget?</p>
+    <div id="answers"></div>
+    <p id="feedback"></p>
+  </div>
+
+  <div id="result-screen" class="screen">
+    <h2>Ferdig!</h2>
+    <p id="final-score"></p>
+    <button onclick="restartQuiz()">Spill igjen</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
